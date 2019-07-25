@@ -2,7 +2,7 @@
 import numpy as np
 import timeit
 
-my_map = np.random.randint(2, size=(10, 10), dtype=np.int8)  # 随机生成0和1,0代表死1代表生
+my_map = np.random.randint(2, size=(1000, 1000), dtype=np.int8)  # 随机生成0和1,0代表死1代表生
 my_map[0, :] = my_map[-1:] = my_map[:, 0] = my_map[:, -1] = 0  # 边界定为死亡
 # print(map)
 neighbor = np.zeros(my_map.shape)
